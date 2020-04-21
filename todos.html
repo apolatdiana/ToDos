@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="todos.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+      crossorigin="anonymous">
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container float-center">
+      <div class="row card card-body m-5" id = "main">
+        <h2>To-do:</h2>
+        <div class="row">
+          <div class="col-md-12">
+            <ul class = "list-group"id="todoItems">
+                
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <form id = "addForm">
+          <div class= "form-group form-inline">
+            
+            <label class=" col-3 "><b>Task</b></label>
+            <input
+              type="text"
+              class="form-control col-9"
+              id="todo-text"
+              placeholder="What are you doing today?"
+            />
+          </div>
+          <div>
+            <button type="submit"  class ="btn btn-primary mt-4 float-right" id ="submit">Save Item</button>
+          </div>
+        </form>
+    </div>
+    <script src="./todos.js"></script>
+  </body>
+</html>
